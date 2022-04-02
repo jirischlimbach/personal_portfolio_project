@@ -160,7 +160,9 @@ nav {
     margin-top: 1rem;
 }
 
-#project1_text {
+#project1_text,
+#project2_text,
+#project3_text {
     display: none;
 }
 
