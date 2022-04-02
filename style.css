@@ -21,14 +21,27 @@ p {
     text-align: left;
 }
 
-/* FLEXBOX*/
+/* FLEXBOX + ICONS*/
 .flexbox {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+}
+
+.icon {
+    width: 40px;
+}
+
+/* SKILLS */
+.icons_flexbox {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /* HEADER + NAV */
@@ -116,6 +129,7 @@ nav {
     border: 2px solid black;
 }
 
+
 /* PROJECTS */
 .grid_projects {
     margin-top: 1rem;
@@ -145,4 +159,13 @@ nav {
 .project_card p {
     text-align: justify;
     margin-top: 1rem;
+}
+
+/* CONTACT */
+#contact {
+    justify-content: center;
+}
+
+#contact img {
+    margin: 0 2rem;
 }
