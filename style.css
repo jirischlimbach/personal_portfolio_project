@@ -39,6 +39,10 @@ p {
 header {
     width: 100%;
     padding: 1rem;
+    background-image: url(./images/header_background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .header_div {
