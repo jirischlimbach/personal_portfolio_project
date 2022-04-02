@@ -35,15 +35,6 @@ p {
     width: 40px;
 }
 
-/* SKILLS */
-.icons_flexbox {
-    margin-top: 1rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 /* HEADER + NAV */
 header {
     width: 100%;
@@ -126,9 +117,17 @@ nav {
 .header_profile_photo img {
     width: 100%;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
+/* SKILLS */
+.icons_flexbox {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 /* PROJECTS */
 .grid_projects {
@@ -168,4 +167,21 @@ nav {
 
 #contact img {
     margin: 0 2rem;
+}
+
+.flexbox p {
+    margin-top: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .05rem;
+    font-size: 0.7rem;
+    padding: 1rem 0;
+}
+
+.heart {
+    color: red;
 }
