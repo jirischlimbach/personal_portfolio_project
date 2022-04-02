@@ -160,6 +160,10 @@ nav {
     margin-top: 1rem;
 }
 
+#project1_text {
+    display: none;
+}
+
 /* CONTACT */
 #contact {
     justify-content: center;
