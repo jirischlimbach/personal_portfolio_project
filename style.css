@@ -118,7 +118,7 @@ nav {
     width: 30%;
     display: flex;
     padding-top: 1rem;
-    animation: showProfilePic 1.5s ease 1s forwards;
+    animation: showProfilePic 1s ease .7s forwards;
 }
 
 .header_profile_photo img {
