@@ -21,6 +21,10 @@ p {
     text-align: left;
 }
 
+.no_overflow {
+    overflow: hidden;
+}
+
 /* FLEXBOX + ICONS*/
 .flexbox {
     max-width: 1000px;
