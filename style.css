@@ -167,9 +167,19 @@ nav {
 
 #project1,
 #project2,
-#project3 {
+#project3,
+#project1Hide,
+#project2Hide,
+#project3Hide {
     font-weight: 500;
     text-decoration: underline;
+    font-size: 0.85rem;
+}
+
+#project1Hide,
+#project2Hide,
+#project3Hide {
+    display: none;
 }
 
 #project1:hover,
