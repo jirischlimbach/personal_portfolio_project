@@ -14,19 +14,22 @@ function showText(event) {
         case project1:
             project1Text.style.display = 'block';
             project1.style.display = 'none';
-            project1Hide.style.display = 'block';
+            project1Hide.style.display = 'list-item';
+            project1Hide.style.listStyleImage = 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg)';
             project1Hide.style.cursor = 'pointer';
             break;
         case project2:
             project2Text.style.display = 'block';
             project2.style.display = 'none';
-            project2Hide.style.display = 'block';
+            project2Hide.style.display = 'list-item';
+            project2Hide.style.listStyleImage = 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg)';
             project2Hide.style.cursor = 'pointer';
             break;
         case project3:
             project3Text.style.display = 'block';
             project3.style.display = 'none';
-            project3Hide.style.display = 'block';
+            project3Hide.style.display = 'list-item';
+            project3Hide.style.listStyleImage = 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg)';
             project3Hide.style.cursor = 'pointer';
             break;
         default:
