@@ -12,12 +12,15 @@ function showText(event) {
     switch (event.target) {
         case project1:
             project1Text.style.display = 'block';
+            project1.innerHTML = 'Show less';
             break;
         case project2:
             project2Text.style.display = 'block';
+            project2.innerHTML = 'Show less';
             break;
         case project3:
             project3Text.style.display = 'block';
+            project3.innerHTML = 'Show less';
             break;
         default:
             alert('invalid');

@@ -165,6 +165,19 @@ nav {
     margin-top: 1rem;
 }
 
+#project1,
+#project2,
+#project3 {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#project1:hover,
+#project2:hover,
+#project3:hover {
+    cursor: pointer;
+}
+
 #project1_text,
 #project2_text,
 #project3_text {
