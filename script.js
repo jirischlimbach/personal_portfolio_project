@@ -1,69 +1,40 @@
 let project1 = document.getElementById('project1');
-let project1Text = document.getElementById('project1_text');
-let project1Hide = document.getElementById('project1Hide');
+let project1_text = document.getElementById('project1_text');
 
 let project2 = document.getElementById('project2');
-let project2Text = document.getElementById('project2_text');
+let project2_text = document.getElementById('project2_text');
 
 let project3 = document.getElementById('project3');
-let project3Text = document.getElementById('project3_text');
+let project3_text = document.getElementById('project3_text');
 
-
-function showText(event) {
-    switch (event.target) {
-        case project1:
-            project1Text.style.display = 'block';
-            project1.style.display = 'none';
-            project1Hide.style.display = 'list-item';
-            project1Hide.style.listStyleImage = 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg)';
-            project1Hide.style.cursor = 'pointer';
-            break;
-        case project2:
-            project2Text.style.display = 'block';
-            project2.style.display = 'none';
-            project2Hide.style.display = 'list-item';
-            project2Hide.style.listStyleImage = 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg)';
-            project2Hide.style.cursor = 'pointer';
-            break;
-        case project3:
-            project3Text.style.display = 'block';
-            project3.style.display = 'none';
-            project3Hide.style.display = 'list-item';
-            project3Hide.style.listStyleImage = 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg)';
-            project3Hide.style.cursor = 'pointer';
-            break;
-        default:
-            alert('invalid');
-    };
-};
-
-function hideText(event) {
-    switch (event.target) {
-        case project1Hide:
-            project1Text.style.display = '';
-            project1.style.display = '';
-            project1Hide.style.display = '';
-            break;
-        case project2Hide:
-            project2Text.style.display = '';
-            project2.style.display = '';
-            project2Hide.style.display = '';
-            break;
-        case project3Hide:
-            project3Text.style.display = '';
-            project3.style.display = '';
-            project3Hide.style.display = '';
-            break;
-        default:
-            alert('invalid');
+function showOrHide(event) {
+    if (event.target === project1) {
+        if (project1_text.style.display === 'block') {
+            project1_text.style.display = 'none';
+            project1.innerHTML = 'Show more';
+        } else {
+            project1_text.style.display = 'block';
+            project1.innerHTML = 'Show less';
+        }
+    } else if (event.target === project2) {
+        if (project2_text.style.display === 'block') {
+            project2_text.style.display = 'none';
+            project2.innerHTML = 'Show more';
+        } else {
+            project2_text.style.display = 'block';
+            project2.innerHTML = 'Show less';
+        }
+    } else if (event.target === project3) {
+        if (project3_text.style.display === 'block') {
+            project3_text.style.display = 'none';
+            project3.innerHTML = 'Show more';
+        } else {
+            project3_text.style.display = 'block';
+            project3.innerHTML = 'Show less';
+        }
     }
 }
 
-project1.addEventListener('click', showText);
-project1Hide.addEventListener('click', hideText);
-
-project2.addEventListener('click', showText);
-project2Hide.addEventListener('click', hideText);
-
-project3.addEventListener('click', showText);
-project3Hide.addEventListener('click', hideText);
+project1.addEventListener('click', showOrHide);
+project2.addEventListener('click', showOrHide);
+project3.addEventListener('click', showOrHide);

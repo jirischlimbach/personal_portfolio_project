@@ -173,10 +173,7 @@ nav {
 
 #project1,
 #project2,
-#project3,
-#project1Hide,
-#project2Hide,
-#project3Hide {
+#project3 {
     font-weight: 500;
     text-decoration: underline;
     font-size: 0.85rem;
@@ -187,12 +184,6 @@ nav {
 #project3 {
     display:list-item;
     list-style-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg');
-}
-
-#project1Hide,
-#project2Hide,
-#project3Hide {
-    display: none;
 }
 
 #project1:hover,
