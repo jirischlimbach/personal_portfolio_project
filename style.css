@@ -43,7 +43,7 @@ p {
 header {
     width: 100%;
     padding: 1rem;
-    background-image: url(./images/header_background2.svg);
+    background-image: url(./images/headers/neon1.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -125,10 +125,16 @@ nav {
     animation: showProfilePic 1s ease .7s forwards;
 }
 
-.header_profile_photo img {
+#profilePicture {
     width: 100%;
     border-radius: 50%;
     border: 2px solid white;
+}
+
+#profilePicture:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotate(0.05turn);
+    transition: transform .5s ease;
 }
 
 /* SKILLS */
@@ -210,7 +216,6 @@ nav {
 .flexbox p {
     margin-top: 0.5rem;
 }
-
 /* FOOTER */
 footer {
     text-align: center;

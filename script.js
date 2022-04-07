@@ -1,3 +1,24 @@
+//Changing the header background
+function randomHeader() {
+    let header = document.getElementById('header');
+    let num = Math.floor(Math.random() * 5);
+    
+    if (num === 0) {
+        header.style.backgroundImage = 'url(./images/headers/blue.svg)';
+    } else if (num === 1) {
+        header.style.backgroundImage = 'url(./images/headers/colorful.svg)';
+    } else if (num === 2) {
+        header.style.backgroundImage = 'url(./images/headers/green.svg)';
+    } else if (num === 3) {
+        header.style.backgroundImage = 'url(./images/headers/neon1.svg)';
+    } else {
+        header.style.backgroundImage = 'url(./images/headers/red.svg)';
+    }
+}
+
+randomHeader();
+
+//Show and hide the text description of project card
 let project1 = document.getElementById('project1');
 let project1_text = document.getElementById('project1_text');
 
