@@ -160,6 +160,9 @@ nav {
     .header_profile_photo {
         width: 40%;
     }
+    #profilePicture:hover {
+        transform: none !important;
+    }
 }
 
 /* SKILLS */
@@ -266,7 +269,6 @@ footer {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .05rem;
     font-size: 0.7rem;
-    padding: 1rem 0;
 }
 
 .heart {
