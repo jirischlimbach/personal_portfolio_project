@@ -176,7 +176,7 @@ nav {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
+    /*grid-auto-rows: 1fr; - vypnuto kvukli responzivní verzi při rozbalení projektu*/
     gap: 1rem;
     justify-content: center;
     justify-items: center;
