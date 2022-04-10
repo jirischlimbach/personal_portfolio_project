@@ -235,6 +235,12 @@ nav {
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .grid_projects {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* CONTACT */
 #contact {
     justify-content: center;
@@ -247,6 +253,13 @@ nav {
 .flexbox p {
     margin-top: 0.5rem;
 }
+
+@media only screen and (max-width: 500px) {
+    .flexbox p {
+        text-align: center;
+    }
+}
+
 /* FOOTER */
 footer {
     text-align: center;
