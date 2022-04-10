@@ -137,6 +137,31 @@ nav {
     transition: transform .5s ease;
 }
 
+@media only screen and (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+    .nav_menu {
+        display: none;
+    }
+    .header_content_main {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .header_text {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .header_text p {
+        text-align: center;
+    }
+    .header_profile_photo {
+        width: 40%;
+    }
+}
+
 /* SKILLS */
 .icons_flexbox {
     margin-top: 1rem;
@@ -202,6 +227,12 @@ nav {
 #project2_text,
 #project3_text {
     display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid_projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* CONTACT */
